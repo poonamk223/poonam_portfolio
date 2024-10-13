@@ -1,0 +1,84 @@
+/* Experience Section Styling */
+.experience-section {
+    padding: 20px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section Title */
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #007bff;
+  }
+  
+  /* Flexbox layout for experience items */
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Styling for individual experience items */
+  .experience-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .experience-header h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+  }
+  
+  .company {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .date {
+    font-size: 1em;
+    color: #999;
+  }
+  
+  .experience-description {
+    margin-top: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .experience-header h3 {
+      margin-bottom: 10px;
+    }
+  
+    .experience-item {
+      padding: 15px;
+    }
+  }
+  

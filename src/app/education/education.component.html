@@ -1,0 +1,16 @@
+<section id="education" class="education-section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-content">
+        <!-- Loop through each education entry -->
+        <div class="education-item" *ngFor="let education of educationList">
+          <div class="education-header">
+            <h3>{{ education.degree }}</h3>
+            <span class="institution">{{ education.institution }}</span>
+            <span class="date">{{ education.date }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

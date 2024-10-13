@@ -1,0 +1,90 @@
+/* Skills Section Styling */
+.skills-section {
+    padding: 20px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #007bff;
+  }
+  
+  /* Flexbox layout for skills */
+  .skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Skill name styling */
+  .skill-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    width: 30%; /* Reserve space for the skill name */
+    text-align: left;
+  }
+  
+  /* Progress bar container */
+  .progress-bar {
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+  }
+  
+  /* Progress bar indicator */
+  .progress {
+    background-color: #007bff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+  }
+  
+  /* Progress bar text */
+  .progress-text {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    padding-right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skill {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .skill-name {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .progress-bar {
+      width: 100%;
+    }
+  }
+  

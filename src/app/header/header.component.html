@@ -1,0 +1,24 @@
+<header class="header">
+    <div class="header-content">
+      <h1>{{ basicInfo.name }}</h1>
+      <p>{{basicInfo.tagline}}</p>
+
+      <div class="header-buttons">
+        <a href="mailto:{{ basicInfo.email }}" class="btn">Hire Me</a>
+        <a href="{{basicInfo.linkedin }}" target="_blank" class="btn">LinkedIn</a>
+        <button (click)="downloadCV()" class="btn">Download CV</button>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <!--<li><a href="#references">References</a></li>
+          <li><a href="#contact">Contact</a></li>-->
+        </ul>
+      </nav>
+    </div>
+  </header>
+  

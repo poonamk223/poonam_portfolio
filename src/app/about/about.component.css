@@ -1,0 +1,82 @@
+/* General About Section Styling */
+.about-section {
+    padding: 20px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Flexbox for side-by-side layout */
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Gap between the About and Basic Information sections */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+  }
+  
+  /* Styling for the about description section */
+  .about-description,
+  .basic-info {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 42%; /* Take up half the width of the parent */
+    text-align: left;
+  }
+  
+  /* About section heading */
+  .about-description h2,
+  .basic-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  /* About section paragraph */
+  .about-description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  /* Basic information list styling */
+  .basic-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .basic-info ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .basic-info ul li strong {
+    color: #007bff;
+  }
+  
+  .basic-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .basic-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+  
+    .about-description,
+    .basic-info {
+      width: 100%; /* Full width on mobile */
+    }
+  }
+  
